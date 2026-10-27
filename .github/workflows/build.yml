@@ -1,0 +1,33 @@
+name: Build ArchiTools Add-On
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-2022
+    strategy:
+      fail-fast: false
+      matrix:
+        ac-version: [ 27, 28, 29 ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Build add-on
+        shell: bash
+        run: python Tools/BuildAddOn.py --configFile config.json --acVersion ${{ matrix.ac-version }} --buildConfig Release
+
+      - name: Upload ArchiTools.apx
+        uses: actions/upload-artifact@v4
+        with:
+          name: ArchiTools-AddOn-Archicad-${{ matrix.ac-version }}
+          path: Build/ArchiTools/**/ArchiTools.apx
+          if-no-files-found: error
