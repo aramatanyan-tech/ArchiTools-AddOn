@@ -1,0 +1,13 @@
+{
+    "addOnName": "ArchiTools",
+    "defaultLanguage": "INT",
+    "languages": [
+        "INT"
+    ],
+    "version": "1.0.0",
+    "copyright": {
+        "name": "Aram",
+        "year": "%Y"
+    },
+    "description": "ArchiTools menu for Archicad"
+}

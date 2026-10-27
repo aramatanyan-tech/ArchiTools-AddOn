@@ -1,0 +1,20 @@
+﻿#include "ResourceIds.hpp"
+
+'STR#' ID_ADDON_INFO "Add-on Name and Description" {
+/* [  1] */		"ArchiTools"
+/* [  2] */		"ArchiTools: zone numbering, zone and wall checks, area reports"
+}
+
+'STR#' ID_ADDON_MENU "ArchiTools Menu" {
+/* [   ] */		"ArchiTools"
+/* [  1] */		"Number Selected Zones^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  2] */		"Number Zones by Clicks (on-off)^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  3] */		"Zone Edges Not On Wall Lines^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  4] */		"Watch Corrections (on-off)^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  5] */		"Clear Highlight and Marks^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  6] */		"Number Doors and Windows^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  7] */		"Check Zone Geometry^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  8] */		"Check Zone Numbers and Names^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [  9] */		"Area Report to Excel^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+/* [ 10] */		"Open ArchiTools Window^E3^ES^EE^EI^ED^EL^EW^ET^EM"
+}
